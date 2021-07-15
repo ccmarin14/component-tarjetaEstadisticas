@@ -1,15 +1,15 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: hsl(233,47%,7%);
     font-size: 15px;
     font-family: 'Inter';
-    justify-content: center;
-    align-items: center;
 }
 
 main {
-    padding: 5%
+    padding: 5% 0;
 }
 
 .container {
@@ -20,75 +20,75 @@ main {
     max-width: 960px;
     border-radius: 10px;
     overflow: hidden;
-    margin: auto;
 }
 
 .textcontainer {
     background-color: hsl(244,38%,16%);
-    max-width: 50%;
-    min-width: 400px;
-    padding: 5% 10% 5% 5%;
+    max-width: 480px;
+    min-width: 350px;
+    padding: 48px 96px 48px 48px;
 }
 
-.textcontainer__tittle {
-    color: hsl(0,0%,100%);
-}
+    .textcontainer__tittle {
+        color: hsl(0,0%,100%);
+    }
 
-.textcontainer__tittle spam {
-    color: hsl(277,64%,61%);
-}
+    .textcontainer__tittle spam {
+        color: hsl(277,64%,61%);
+    }
 
-.textcontainer__paragraph {
-    margin-top: 2%;
-    font-size: 13px;
-    color: hsla(0,0%,100%,0.75);
-}
+    .textcontainer__paragraph {
+        margin-top: 2%;
+        font-size: 13px;
+        color: hsla(0,0%,100%,0.75);
+    }
 
-.textcontainer__stats {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10%;
-}
+    .textcontainer__stats {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
 
-.stats {
-    margin-right: 18%;
-    margin-top: 5%;
-}
+        .stats {
+            margin-right: 60px;
+            margin-top: 15px;
+        }
 
-.stats__queries {
-    margin-top: 5%;
-}
+        .stats__queries {
+            margin-top: 15px;
+        }
 
-.stats__data {
-    font-size: 20px;
-    color: hsl(0,0%,100%);
-}
+        .stats__data {
+            font-size: 20px;
+            color: hsl(0,0%,100%);
+        }
 
-.stats__name {
-    margin-top: 5%;
-    font-size: 10px;
-    color: hsla(0,0%,100%,0.75);
-}
+        .stats__name {
+            margin-top: 3px;
+            font-size: 10px;
+            color: hsla(0,0%,100%,0.75);
+        }
 
 .imagecontainer {
     background-color: hsl(277,64%,61%);
-    max-width: 50%;
-    min-width: 400px;
+    max-width: 480px;
+    min-width: 350px;
 }
 
-.imagecontainer img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-}
+    .imagecontainer img {
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
 
-@media only screen and (max-width: 888px) {
+@media (max-width: 1080px) {
     .container {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .textcontainer {
         text-align: center;
+        padding: 48px;
     }
 
     .stats {
